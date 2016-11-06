@@ -23,6 +23,15 @@ curl https://todoist.com/API/v7/sync \
     -d resource_types='["projects"]'
 ```
 
+To get the ID of Todoist labels, you can use this curl command:
+
+```
+curl https://todoist.com/API/v7/sync \
+    -d token=YOUR_TODOIST_API_TOKEN \
+    -d sync_token='*' \
+    -d resource_types='["labels"]'
+```
+
 The website [jsonparseronline.com](http://jsonparseronline.com/) might be useful to parse the JSON result.
 
 ## Usage

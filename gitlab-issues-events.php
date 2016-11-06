@@ -13,7 +13,8 @@ $projects = [
 	'gitlabuser/reponame' => 1234567890,
 ];
 
-$labels = '[486211]';
+// set label ids here (JSON format)
+$labels = '[12345678]';
 
 // Enter GitLab Security Token here
 define ('GITLAB_SECRET_TOKEN', 'your Gitlab secret token');
