@@ -1,0 +1,6 @@
+{
+  "require": {
+    "php-curl-class/php-curl-class": "^7.0.1",
+    "ramsey/uuid": "^3.5.1"
+  }
+}

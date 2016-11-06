@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteCond %{HTTP:X-Gitlab-Token} ^(.*)$
+RewriteCond %{HTTP_COOKIE} !^.*token.*$
+RewriteRule gitlab-issues-events.php %{REQUEST_SCHEME}://%{SERVER_NAME}%{REQUEST_URI} [CO=token:%1:%{SERVER_NAME}]
